@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class GameObjectHelper : MonoBehaviour {
+namespace Assets.Scripts.Helpers
+{
+    public class GameObjectHelper : ScriptableObject
+    {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        /// <summary>
+        /// Instanciate a preafb and put it into a container
+        /// </summary>
+        /// <param name="prefab"></param>
+        /// <param name="container"></param>
+        public static GameObject Instanciate(GameObject prefab, GameObject container)
+        {
+            GameObject gameObject = Instantiate(prefab);
+            gameObject.transform.SetParent(container.transform);
+            return gameObject;
+        }
+
+    }
 }

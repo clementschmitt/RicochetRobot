@@ -8,8 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462184}
+  - 114: {fileID: 11498084}
   m_Layer: 0
-  m_Name: Case
+  m_Name: Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +46,7 @@ GameObject:
   - 65: {fileID: 6552510}
   - 23: {fileID: 2328172}
   m_Layer: 0
-  m_Name: WallD
+  m_Name: WallDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -397,6 +398,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11498084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2eb9b6854fd8914583bacd38e7f3647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TopWall: {fileID: 186584}
+  BotWall: {fileID: 148866}
+  RightWall: {fileID: 130194}
+  LeftWall: {fileID: 163096}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -1,33 +1,41 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using Assets.Scripts.Model;
+using Assets.Scripts.Helpers;
+using UnityEngine;
 
-public class GameController : MonoBehaviour {
-
-    private GameController _instance;
-
-    public GameController Instance
+namespace Assets.Scripts.Controllers
+{
+    public class GameController : MonoBehaviour
     {
-        get
-        {
-            if (_instance == null)
-            {
-                Debug.LogError("Controller isn't instaciated yet");
-                return null;
-            }
 
-            return _instance;
+        private static GameController _instance;
+
+        public static GameController Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    Debug.LogError("Controller isn't instaciated yet");
+                    return null;
+                }
+
+                return _instance;
+            }
+        }
+
+        // Use this for initialization
+        IEnumerator Start()
+        {
+            _instance = this;
+            yield break;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
         }
     }
-
-	// Use this for initialization
-	void Start () {
-	    _instance = this;
-
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
 }
