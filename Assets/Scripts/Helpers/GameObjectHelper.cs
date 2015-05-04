@@ -2,7 +2,7 @@
 
 namespace Assets.Scripts.Helpers
 {
-    public class GameObjectHelper : ScriptableObject
+    public class GameObjectHelper
     {
 
         /// <summary>
@@ -12,7 +12,7 @@ namespace Assets.Scripts.Helpers
         /// <param name="container"></param>
         public static GameObject Instanciate(GameObject prefab, GameObject container)
         {
-            GameObject gameObject = Instantiate(prefab);
+            GameObject gameObject = Object.Instantiate(prefab);
             gameObject.transform.SetParent(container.transform);
             return gameObject;
         }
