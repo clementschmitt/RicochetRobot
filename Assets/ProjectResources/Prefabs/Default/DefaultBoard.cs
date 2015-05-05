@@ -6,325 +6,97 @@ namespace Assets.ProjectResources.Prefabs.Default
     {
         public static BoardPart GetDefaultNorthWestBoardRecto()
         {
-            return new BoardPart(){
-                Cells = new Cell[][]
+            return new BoardPart
+            {
+                Cells = new[]
                 {
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true,
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        }
+                        new Cell("UL"),
+                        new Cell("U"),
+                        new Cell("U"),
+                        new Cell("U"),
+                        new Cell("UR"),
+                        new Cell("UL"),
+                        new Cell("U"),
+                        new Cell("U")
                     },
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell("DR",new Token{Color = TokenColors.Red,Shape = TokenShape.Star}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
                         new Cell()
-                        {
-                             HasLeftWall = true,
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true,
-                            HasRightWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Red,
-                                Shape = TokenShape.Star
-                            }
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
                         new Cell()
-                        {
-                             HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("LR"),
+                        new Cell("LD", new Token{Color = TokenColors.Green, Shape = TokenShape.Planet}),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("D"),
                         new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                             HasLeftWall = true,
-                             HasBotWall = true,
-                             Token = new Token()
-                             {
-                                 Color = TokenColors.Green,
-                                 Shape = TokenShape.Planet
-                             }
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("LD"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("LU",new Token{Color = TokenColors.Yellow,Shape = TokenShape.Ring}),
                         new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasBotWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasTopWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Yellow,
-                                Shape = TokenShape.Ring
-                            }
-                        },
-                        new Cell()
-                        {
-                            
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("LU"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("D"),
+                        new Cell(),
                         new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasTopWall = true, 
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Blue,
-                                Shape = TokenShape.Moon
-                            }
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true
-                        }
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("UR",new Token{Color = TokenColors.Blue,Shape = TokenShape.Moon}),
+                        new Cell("L"),
+                        new Cell("D")
                     },
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                             HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true,
-                            HasBotWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Rainbow,
-                                Shape = TokenShape.Cyclon
-                            }
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasTopWall = true
-                        }
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("RD",new Token{Color = TokenColors.Rainbow,Shape = TokenShape.Cyclon}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("LU"),
                     }
                 },
                 BoardPosition = BoardPosition.NorthWest
@@ -332,322 +104,103 @@ namespace Assets.ProjectResources.Prefabs.Default
         }
         public static BoardPart GetDefaultNorthEastBoardRecto()
         {
-            return new BoardPart()
+            return new BoardPart
             {
-                Cells = new Cell[][]
+                Cells = new[]
                 {
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true,
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true
-                        }
+                        new Cell("U"),
+                        new Cell("RU"),
+                        new Cell("LU"),
+                        new Cell("U"),
+                        new Cell("U"),
+                        new Cell("UD"),
+                        new Cell("U"),
+                        new Cell("UR"),
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Green,
-                                Shape = TokenShape.Ring
-                            }
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        }
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("UR",new Token{Color = TokenColors.Green,Shape = TokenShape.Ring}),
+                        new Cell("L"),
+                        new Cell("R"),
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        }
+                        new Cell(),
+                        new Cell("D"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R")
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                             HasLeftWall = true,
-                             HasTopWall = true,
-                             Token = new Token()
-                             {
-                                 Color = TokenColors.Red,
-                                 Shape = TokenShape.Moon
-                             }
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        }
+                        new Cell("R"),
+                        new Cell("LU",new Token{Color = TokenColors.Red,Shape = TokenShape.Moon}),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R")
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true,
-                            HasBotWall = true,
-                        }
-                    },
-                    //-------------------------------------
-                    new Cell[]
-                    {
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        }
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("RD")
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasBotWall = true,
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasBotWall = true,
-                            HasRightWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Blue,
-                                Shape = TokenShape.Moon
-                            }
-                        },
-                        new Cell()
-                        {
-                             HasLeftWall = true,
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true,
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true,
-                            HasBotWall = true,
-                            Token = new Token()
-                            {
-                                Color = TokenColors.Yellow,
-                                Shape = TokenShape.Star
-                            }
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        }
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("UR")
                     },
-                    new Cell[]
-                    {
-                        new Cell()
-                        {
-                            HasTopWall = true,
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
 
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
+                    new[]
+                    {
+                        new Cell("D"),
+                        new Cell(),
+                        new Cell("DR",new Token{Color = TokenColors.Blue,Shape = TokenShape.Moon}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("LD",new Token{Color = TokenColors.Yellow,Shape = TokenShape.Star}),
+                        new Cell("R")
+                    },
+                    new[]
+                    {
+                        new Cell("UR"),
+                        new Cell("L"),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("U"),
+                        new Cell("R")
                     }
                 },
                 BoardPosition = BoardPosition.NorthEast
@@ -656,297 +209,104 @@ namespace Assets.ProjectResources.Prefabs.Default
         //TODO END THIS : http://d4rian.free.fr/RicochetRobots/image011.png
         public static BoardPart GetDefaultSouthWestBoardRecto()
         {
-            return new BoardPart()
+            return new BoardPart
             {
 
-                Cells = new Cell[][]
+                Cells = new[]
                 {
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            HasTopWall = true
-                        },
-                        new Cell()
-                        {
-                           
-                        },
-                        new Cell()
-                        {
-                           
-                        },
-                        new Cell()
-                        {
-                            HasRightWall = true
-                        },
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        }
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("LD")
                     },
 
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("DR", new Token(){Color = TokenColors.Blue,Shape = TokenShape.Ring}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("U")
                     },
 
-                    new Cell[]
+                   new[]
                     {
+                        new Cell("LD"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell("D"),
+                        new Cell(),
                         new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
                     },
 
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("LU"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("LU", new Token{Color = TokenColors.Red,Shape = TokenShape.Planet}),
+                        new Cell(),
                         new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
                     },
 
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
                         new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
-                    },
-                    //-------------------------------------
-                    new Cell[]
-                    {
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
                     },
 
-                    new Cell[]
+                    new[]
                     {
+                        new Cell("LR"),
+                        new Cell("LD", new Token{Color = TokenColors.Yellow,Shape = TokenShape.Moon}),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("D"),
                         new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
                     },
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                            HasLeftWall = true
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           
-                        }
-                    }
+                        new Cell("L"),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("UR", new Token{Color = TokenColors.Green,Shape = TokenShape.Star}),
+                        new Cell("L")
+                    },
+                    new[]
+                    {
+                        new Cell("DL"),
+                        new Cell("D"),
+                        new Cell("D"),
+                        new Cell("D"),
+                        new Cell("DR"),
+                        new Cell("DL"),
+                        new Cell("D"),
+                        new Cell("D"),
+                    },
                 },
                 BoardPosition = BoardPosition.SouthWest
             };
@@ -954,281 +314,104 @@ namespace Assets.ProjectResources.Prefabs.Default
 
         public static BoardPart GetDefaultSouthEastBoardRecto()
         {
-            return new BoardPart()
+            return new BoardPart
             {
 
-                Cells = new Cell[][]
+                Cells = new[]
                 {
-                    new Cell[]
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell("DR"),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("RD")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell("DR", new Token{Color = TokenColors.Yellow,Shape = TokenShape.Planet}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("D"),
+                        new Cell(),
+                        new Cell("RU")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R"),
+                        new Cell("UL",new Token{Color = TokenColors.Blue,Shape = TokenShape.Star}),
+                        new Cell(),
+                        new Cell("R")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("R")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell(),
+                        new Cell("DR",new Token{Color = TokenColors.Green,Shape = TokenShape.Moon}),
+                        new Cell("L"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("D"),
+                        new Cell("R")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    },new Cell[]
+                        new Cell(),
+                        new Cell("U"),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell(),
+                        new Cell("RU",new Token{Color = TokenColors.Red,Shape = TokenShape.Ring}),
+                        new Cell("RL")
+                    },
+                    new[]
                     {
-                        new Cell()
-                        {
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                            
-                        },
-                        new Cell()
-                        {
-                           HasRightWall = true
-                        }
-                    }
+                        new Cell("D"),
+                        new Cell("D"),
+                        new Cell("D"),
+                        new Cell("DR"),
+                        new Cell("DL"),
+                        new Cell("D"),
+                        new Cell("D"),
+                        new Cell("DR")
+                    },
                 },
                 BoardPosition = BoardPosition.SouthEast
             };
         }
 
-        
+
     }
 }
